@@ -112,3 +112,60 @@
 
 
 # TUPLE
+# A Tuple is a colelction which is ordered and unchangeable. allows duplicate members
+
+# create tuple
+# for a tuple use parethesis
+fruits = ('apples', 'oranges', 'grapes')
+fruits2 = tuple(('apples', 'oranges', 'grapes'))
+
+# if only one element, give ita trailing comma, without it it will be considered a string, not a tuple
+fruits3 = ('apples',)
+
+# getting value works
+# print(fruits[1])
+
+# cant change a value however, this will give you an error
+# fruits[1] = 'peaches'
+
+# you can delete a tuple
+del fruits2
+
+# SETS
+# set is a collection which is unordered and unindexed, NO DUPLICATES
+
+# create set with curly braces
+
+fruits_set = {'apples', 'oranges', 'mangoes'}
+
+# check if in set - boolean
+# print('apples' in fruits_set)
+
+# add to set
+# fruits_set.add('grapes')
+
+# remove set
+# fruits_set.remove('grapes')
+
+# clear set
+# fruits_set.clear()
+
+# delete3
+# del fruits_set
+
+
+# DICTIONARIES - similar to object in javascript or hash in ruby
+
+# create dictionary, keys have quotes
+
+person = {'first_name': 'john', "last_name": 'doe', 'age': 5}
+
+# get value
+print(person["first_name"])
+print(person.get('last_name'))
+
+# add key-value
+person['phone'] = '3013412411'
+
+# get dictionary keys
+print(person.keys())
